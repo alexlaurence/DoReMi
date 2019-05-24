@@ -1,0 +1,15 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<div class="center-on-page">  
+<body style="background-color:rgb(1, 0, 27);">
+<h1 style=font-size:100px><span style='color: rgb(253, 60, 60)'>도<span style='color: rgb(114, 230, 91)'>레<span style='color: rgb(210, 223, 26)'>미</span></span></span></h1>
+<form class="form-inline" method="POST" action="{{ url_for('result') }}">
+   <div class="select">
+    <select name="comp_select" style="background-color:rgb(255, 255, 255);color:rgb(1, 0, 27)" class="selectpicker form-control">
+    {% for o in data %}
+     <option value="{{ o.name }}" >{{ o.name }}</option>
+    {% endfor %}
+    </select>
+   </div>
+    <button type="submit" class="btn">Go</button>
+</form>
