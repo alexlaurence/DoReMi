@@ -9,11 +9,12 @@ app = Flask(__name__)
 def index():
     return render_template(
         'index.html',
-        data=[{'name':'Toronto'}, {'name':'Montreal'}, {'name':'Calgary'},
-        {'name':'Ottawa'}, {'name':'Edmonton'}, {'name':'Mississauga'},
-        {'name':'Winnipeg'}, {'name':'Vancouver'}, {'name':'Brampton'}, 
-        {'name':'Quebec'}])
-
+        data=[{'name':'서울'}, {'name':'강원'}, {'name':'경기'},
+        {'name':'경남'}, {'name':'경북'}, {'name':'광주'},
+        {'name':'대구'}, {'name':'대전'}, {'name':'부산'}, 
+        {'name':'울산'}, {'name':'인천'}, {'name':'전남'},
+        {'name':'전북'}, {'name':'제주'}, {'name':'충남'},
+        {'name':'충북'}, {'name':'전국'}])
 
 @app.route("/result" , methods=['GET', 'POST'])
 def result():
