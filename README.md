@@ -1,3 +1,8 @@
+[![Open in Cloud Shell][shell_img]][shell_link]
+
+[shell_img]: http://gstatic.com/cloudssh/images/open-btn.png
+[shell_link]: https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/alexlaurence/DoReMi&page=editor&open_in_editor=DoReMi-app
+
 ![Alt text](https://i.imgur.com/OS76n8F.png)
 
 ## Inspiration
